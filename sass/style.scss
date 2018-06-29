@@ -1,0 +1,22 @@
+@import "css-calc-mixin";
+$color: rgb(140, 0, 255);
+
+.block {
+  @include calc(width, 220px);
+}
+
+.block {
+  @include calc(margin, 220px, 0);
+}
+
+.block {
+  @include calc(width, 220px, true, 0);
+}
+
+.block {
+  @include calc(width, 220px, true, 0, 50%, '+');
+}
+
+body {
+  background-color: $color;
+}
